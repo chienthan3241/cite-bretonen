@@ -1,0 +1,42 @@
+doctype html
+html(ng-app="app")
+  head
+    title= title
+    // fonts
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Oswald|Open+Sans')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:100,700,400')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300')
+    // Font Awesome
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    // Bootstrap core CSS
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet")
+    // Material Design Bootstrap
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet")
+    //self css
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+    //include sidenav
+    include nav
+    block header
+    block content
+
+    include footer
+
+
+    // JQuery
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+    // Bootstrap tooltips
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js")
+    // Bootstrap core JavaScript
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js")
+    // MDB core JavaScript
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js")
+    //angular
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js")
+    //lodash
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js")
+    //self angular
+    script(src='/javascripts/angular.js')
+
+

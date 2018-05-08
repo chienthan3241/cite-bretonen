@@ -1,0 +1,16 @@
+body {
+  padding-top: 78px; }
+
+.page_title2 {
+  background: #3AB2E4 url("/images/footer-graph3.png") no-repeat center bottom;
+  float: left;
+  padding: 40px 0;
+  width: 100%;
+  margin-bottom: 40px;
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-width: 1px; }
+  .page_title2 h1 {
+    font-size: 32px;
+    font-weight: 200;
+    color: #fff; }

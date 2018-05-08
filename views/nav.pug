@@ -1,0 +1,36 @@
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top.scrolling-navbar.warning-color.lighten-5
+  a.navbar-brand(href="/")
+    img(src='/images/logo.png', style="max-width:100px")
+  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.active
+        a.nav-link(href="/")
+          | 1 Start
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href="#") 2 Wir Bretonen
+      li.nav-item.dropdown
+        a#navbarDropdown.nav-link.dropdown-toggle(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+          | 3 Unser Wohnprojekt
+        .dropdown-menu(aria-labelledby="navbarDropdown")
+          a.dropdown-item(href="#") 3.1 Baubeschreibung
+          a.dropdown-item(href="#") 3.2 Lagerplan
+          a.dropdown-item(href="#") 3.3 Gesamtansichten
+          .dropdown-divider
+          a.dropdown-item(href="#") 3.4 Die Wohnungen
+      li.nav-item
+        a.nav-link(href="#") 4 Kontakt
+      li.nav-item
+        a.nav-link(href="#") 5 Links
+      li.nav-item
+        a.nav-link(href="#") 6 Presse
+    ul.navbar-nav.nav-flex-icons
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle
+          i.fa.fa-user
+
+    //form.form-inline.my-2.my-lg-0
+    //  input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
+    //  button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search

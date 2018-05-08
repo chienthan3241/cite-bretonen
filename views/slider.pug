@@ -1,0 +1,43 @@
+// Carousel Wrapper
+#slider-main.carousel.slide.carousel-fade(data-ride="carousel")
+  // Indicators
+  ol.carousel-indicators
+    li.active(data-target="#slider-main" data-slide-to="0")
+    li(data-target="#slider-main" data-slide-to="1")
+    li(data-target="#slider-main" data-slide-to="2")
+  // /.Indicators
+  // Slides
+  .carousel-inner(role="listbox")
+    .carousel-item.active
+      .view
+        img.d-block.w-100(src="/images/sl1.png" alt="Grundstück")
+        .mask.rgba-black-light
+      .carousel-caption
+        h3.h3-responsive Cit&eacute; Bretonen
+        p Offenlage
+    .carousel-item
+      // Mask color
+      .view
+        img.d-block.w-100(src="/images/sl2.png" alt="Second slide")
+        .mask.pattern-9
+      .carousel-caption
+        h3.h3-responsive Lageplan
+        p Schnitt/Ansicht
+    .carousel-item
+      // Mask color
+      .view
+        img.d-block.w-100(src="/images/sl3.png" alt="Third slide")
+        .mask.rgba-red-slight
+      .carousel-caption
+        h3.h3-responsive Lageplan
+        p 3D Ansicht
+  // /.Slides
+  // Controls
+  a.carousel-control-prev(href="#slider-main" role="button" data-slide="prev")
+    span.carousel-control-prev-icon(aria-hidden="true")
+    span.sr-only Previous
+  a.carousel-control-next(href="#slider-main" role="button" data-slide="next")
+    span.carousel-control-next-icon(aria-hidden="true")
+    span.sr-only Next
+  // /.Controls
+// /.Carousel Wrapper
