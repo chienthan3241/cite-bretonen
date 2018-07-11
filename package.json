@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "mocha"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -16,7 +16,6 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-open": "^3.0.1",
-    "gulp-sass": "^4.0.1",
-    "mocha": "^5.2.0"
+    "gulp-sass": "^4.0.1"
   }
 }
